@@ -44,19 +44,20 @@ function uhuy(yuhu) {
 	document.write("<th>Nilai Rata-rata</th>");
 	document.write("<th>Nilai Huruf</th>");
 	document.write("<th>Status</th></tr>");
-	for (var j = 1; j <= yuhu; j++) {
-		var aha = [
-			nim 	= document.getElementById("nim"+j).value,
-			nama 	= document.getElementById("nama"+j).value,
-			tugas1 	= document.getElementById("tugas1"+j).value,
-			tugas2 	= document.getElementById("tugas2"+j).value,
-			uts 	= document.getElementById("uts"+j).value,
-			uas 	= document.getElementById("uas"+j).value
-		];
-		var tgs1 = eval(aha[2]);
-		var tgs2 = eval(aha[3]);
-		var utss = eval(aha[4]);
-		var uass = eval(aha[5]);
+	
+	for (var j = 1; j <= yuhu; j++) {		
+
+		nim 	= document.getElementById("nim"+j).value;
+		nama 	= document.getElementById("nama"+j).value;
+		tugas1 	= document.getElementById("tugas1"+j).value;
+		tugas2 	= document.getElementById("tugas2"+j).value;
+		uts 	= document.getElementById("uts"+j).value;
+		uas 	= document.getElementById("uas"+j).value;
+
+		var tgs1 = eval(tugas1);
+		var tgs2 = eval(tugas1);
+		var utss = eval(uts);
+		var uass = eval(uas);
 
 		var rata = (tgs1+tgs2+utss+uass)/4;
 		var huruf, status;
@@ -73,12 +74,12 @@ function uhuy(yuhu) {
 		}
 
 		document.write("<tr height='30px' style='padding:5px; margin:5px'><td>"+j+"</td>");
-		document.write("<td>"+aha[0]+"</td>");
-		document.write("<td>"+aha[1]+"</td>");
-		document.write("<td>"+aha[2]+"</td>");
-		document.write("<td>"+aha[3]+"</td>");
-		document.write("<td>"+aha[4]+"</td>");
-		document.write("<td>"+aha[5]+"</td>");
+		document.write("<td>"+nim+"</td>");
+		document.write("<td>"+nama+"</td>");
+		document.write("<td>"+tugas1+"</td>");
+		document.write("<td>"+tugas2+"</td>");
+		document.write("<td>"+uts+"</td>");
+		document.write("<td>"+uas+"</td>");
 		document.write("<td>"+rata+"</td>");
 		document.write("<td>"+huruf+"</td>");
 		document.write("<td>"+status+"</td></tr>");
