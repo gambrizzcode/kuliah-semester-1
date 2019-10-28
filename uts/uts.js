@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 function keluar() {
 	var jml = document.getElementById("jml").value;
@@ -7,17 +7,17 @@ function keluar() {
 		document.write("<h3>Mahasiswa "+i+"</h3><br>");
 		document.write("<table>");
 		document.write("<tr><td>NIM</td>");
-		document.write("<td><input type='text' id='nim"+i+"''></td></tr>");
+		document.write("<td><input type='text' id='nim"+i+"'></td></tr>");
 		document.write("<tr><td>Nama Lengkap</td>");
-		document.write("<td><input type='text' id='nama"+i+"''></td></tr>");
+		document.write("<td><input type='text' id='nama"+i+"'></td></tr>");
 		document.write("<tr><td>Nilai Tugas 1</td>");
-		document.write("<td><input type='text' id='tugas1"+i+"''></td></tr>");
+		document.write("<td><input type='text' id='tugas1"+i+"'></td></tr>");
 		document.write("<tr><td>Nilai Tugas 2</td>");
-		document.write("<td><input type='text' id='tugas2"+i+"''></td></tr>");
+		document.write("<td><input type='text' id='tugas2"+i+"'></td></tr>");
 		document.write("<tr><td>Nilai UTS</td>");
-		document.write("<td><input type='text' id='uts"+i+"''></td></tr>");
+		document.write("<td><input type='text' id='uts"+i+"'></td></tr>");
 		document.write("<tr><td>Nilai UAS</td>");
-		document.write("<td><input type='text' id='uas"+i+"''><br></td></tr>");
+		document.write("<td><input type='text' id='uas"+i+"'><br></td></tr>");
 		document.write("</table>");
 	}
 
