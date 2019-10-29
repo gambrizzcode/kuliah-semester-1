@@ -1,5 +1,3 @@
-// "use strict";
-
 function keluar() {
 	var jml = document.getElementById("jml").value;
 
@@ -54,20 +52,20 @@ function uhuy(yuhu) {
 		uts 	= document.getElementById("uts"+j).value;
 		uas 	= document.getElementById("uas"+j).value;
 
-		var tgs1 = eval(tugas1);
-		var tgs2 = eval(tugas1);
-		var utss = eval(uts);
-		var uass = eval(uas);
+		var tugas1 = eval(tugas1);
+		var tugas2 = eval(tugas2);
+		var uts = eval(uts);
+		var uas = eval(uas);
 
-		var rata = (tgs1+tgs2+utss+uass)/4;
+		var rata = (tugas1+tugas2+uts+uas)/4;
 		var huruf, status;
 		if (rata >= 85 && rata <= 100) {
 			huruf = "A"; status = "LULUS";
-		}else if (rata >= 70 && rata <= 84) {
+		}else if (rata >= 70 && rata < 85) {
 			huruf = "B"; status = "LULUS";
-		}else if (rata >= 60 && rata <= 69) {
+		}else if (rata >= 60 && rata < 70) {
 			huruf = "C"; status = "LULUS";
-		}else if (rata >= 50 && rata <= 59) {
+		}else if (rata >= 50 && rata < 60) {
 			huruf = "D"; status = "TIDAK LULUS";
 		}else{
 			huruf = "E"; status = "TIDAK LULUS";
