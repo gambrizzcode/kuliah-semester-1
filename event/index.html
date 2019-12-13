@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event dan Marquee</title>
+</head>
+<script type="text/javascript" src="event.js"></script>
+<body onload="p()">
+
+<h1 align="center">Latihan Event onClick</h1>
+<hr width="500">
+<h3 align="center">Pilih Warna favorit anda</h3>
+
+<center>
+	<form>
+		<input type="button" value="Biru" onclick="warna('blue')">
+		<input type="button" value="Pink" onclick="warna('pink')">
+		<input type="button" value="Coklat" onclick="warna('brown')">
+		<input type="button" value="Kelabu" onclick="warna('darkgray')">
+		<input type="button" value="Orange" onclick="warna('orange')">
+		<input type="button" value="Putih" onclick="warna('#FFFFFF')">
+	</form>
+
+	<form>
+		<img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" name="gambar" width="200" height="250"> <br><br>
+
+		<input type="button" value="OFF" onclick="gambar.src = 'https://source.unsplash.com/K4mSJ7kc0As/600x800'">
+		<input type="button" value="ON" onclick="gambar.src = 'https://source.unsplash.com/Mv9hjnEUHR4/600x800'">
+	</form>
+</center>
+
+<hr>
+
+<form name="formcari" onSubmit="cari()">
+	<center>
+		<table>
+			<tr>
+				<td colspan="4"><h1 align="center">Pencarian</h1><hr></td>
+			</tr>
+			<tr>
+				<td><b>Cari Pakai</b></td>
+				<td><img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" height="20" width="20"></td>
+				<td><input type="text" name="keyword" size="40"></td>
+				<td><input type="submit" value="CARI"><input type="reset" value="RESET"></td>
+			</tr>
+			<tr>
+				<td colspan="4"><hr></td>
+			</tr>
+		</table>
+	</center>
+</form>
+
+<form method="post" name="basis">
+	<input type="text" name="kotak">
+</form>
+
+<marquee>
+	<img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" align="middle">
+</marquee>
+
+</body>
+</html>
