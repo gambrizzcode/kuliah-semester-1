@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Frame</title>
+	</head>
+
+	<frameset rows="40%,*, 10%" border="1"> <!--rows 50 untuk menentukan luas kebawah, -->
+		<frame name="header" src="header.html" style="background-color:rgba(100,100,100,0.2)"></frame>
+		
+		<frameset cols="15%,*" border="1">
+			<frame name="sidebar" src="sidebar.html" style="background-color:rgba(100,100,100,0.3)"></frame>
+			
+			<frame name="konten" src="conten.html">      
+			</frame>
+		</frameset>
+
+		<frame name="footer" src="footer.html" style="background-color:rgba(100,100,100,0.2)"></frame>
+	</frameset>
+</html>
