@@ -26,7 +26,7 @@ function fungsiku(){
 }
 
 function tombolklik(){
-	alert('klik bangsat !');
+	alert('klik yaaa !');
 }
 
 function ana(x){

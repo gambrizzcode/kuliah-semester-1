@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kuliah Pemdas</title>
+	<title>Syaikhu Rizal</title>
 </head>
-<body>
+<style type="text/css">
+body{
+	font-family: sans-serif;
+}
+</style>
+<!-- <body> -->
+	<frameset rows="15%,*, 8%" border="10">
+		<frame name="header" src="header.html"></frame>
+		
+		<frameset cols="15%,*" border="1">
+			<frame name="sidebar" src="sidebar.html"></frame>
+			
+			<frame name="content" src="content.html"></frame>
+		</frameset>
 
-<table border="1">
-	<tr>
-		<td>&none;</td>
-	</tr>
-</table>
-
-<center>
-	<hr>
-
-	<form name="formku">
-		<h2>Form Penjumlahan dan Perkalian</h2>
-
-		<label>Bilangan 1</label>
-		<input type="text" name="bil1"> <br><br>
-
-		<label>Bilangan 2</label>
-		<input type="text" name="bil2"> <br><br>
-
-		<input type="button" value="JUMLAH" onclick="jumlah()">
-		<input type="button" value="KALI" onclick="kali()">
-		<input type="reset" value="RESET">
-	</form>
-
-	<hr>
-</center>
-
-<script type="text/javascript" src="input.js"></script>
-
-</body>
+		<frame name="footer" src="footer.html"></frame>
+	</frameset>
+<!-- </body> -->
 </html>

@@ -18,8 +18,8 @@ function faktorialRek(n){
 	}
 }
 
-var yolo = prompt("Masukkan Bilangan untuk di faktorial");
-document.write("faktorial rekursif : " + faktorialRek(yolo));
+// var yolo = prompt("Masukkan Bilangan untuk di faktorial");
+// document.write("faktorial rekursif : " + faktorialRek(yolo));
 
 function pangkat(bil, bilPang){
 	var hasil = 1;
@@ -39,7 +39,7 @@ function pangkatRek(bil, bilPang){
 	}
 }
 
-// var ang  = prompt("Masukkan Angka");
-// var pang = prompt("Masukkan Pangkat");
+var ang  = prompt("Masukkan Angka");
+var pang = prompt("Masukkan Pangkat");
 
-// document.write("hasil pangkat rekursif adalah : ",pangkatRek(ang,pang));
+document.write("hasil pangkat rekursif adalah : ",pangkatRek(ang,pang));
